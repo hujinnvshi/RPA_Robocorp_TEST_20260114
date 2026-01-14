@@ -1,0 +1,59 @@
+# 钉钉 RPA 配置文件
+
+# 日期参数配置
+date_params:
+  # 默认开始日期（格式: YYYY-MM-DD）
+  default_start_date: "2024-01-01"
+
+  # 默认结束日期（格式: YYYY-MM-DD）
+  default_end_date: "2024-01-31"
+
+# 钉钉客户端配置
+dingtalk:
+  # 钉钉安装路径（如需自动启动）
+  # exe_path: "C:\\Users\\{YOUR_USER}\\AppData\\Local\\DingTalk\\DingtalkLauncher.exe"
+
+  # 钉钉窗口标题关键字（用于激活窗口）
+  window_title: "DingTalk"
+
+  # 界面控件配置（需要根据实际界面调整）
+  controls:
+    # 开始日期输入框的标签/名称
+    start_date_field: "开始日期"
+
+    # 结束日期输入框的标签/名称
+    end_date_field: "结束日期"
+
+    # 查询按钮的文本/名称
+    query_button: "查询"
+
+    # 保存/导出按钮的文本/名称
+    save_button: "保存"
+
+# 导出配置
+export:
+  # 默认输出目录
+  output_dir: "output"
+
+  # 文件名前缀
+  filename_prefix: "dingtalk_export"
+
+  # 是否添加时间戳到文件名
+  add_timestamp: true
+
+  # 下载目录（钉钉可能默认保存到浏览器下载目录）
+  # download_dir: "C:\\Users\\{YOUR_USER}\\Downloads"
+
+# 等待时间配置（秒）
+delays:
+  # 启动钉钉后的等待时间
+  after_launch: 2
+
+  # 输入日期后的等待时间
+  after_input: 0.5
+
+  # 点击查询后的等待时间（等待数据加载）
+  after_query: 3
+
+  # 导出操作的等待时间
+  after_export: 2

@@ -1,0 +1,12 @@
+robotCodeName: DingTalk RPA Automation
+tasks:
+  query_and_export:
+    timeout: 300
+    pythonExe: python
+
+condaConfig: conda.yaml
+
+artifactsDir: output
+
+environment:
+  pythonVersion: "3.9"

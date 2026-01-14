@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - rpaframework==22.5.0
+    - rpaframework-windows==5.1.0
+    - robocorp-log==2.4.0
+    - PyYAML
